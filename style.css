@@ -1,0 +1,50 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+main {
+    width: 100%;
+    overflow: hidden;
+}
+
+header nav {
+    position: fixed;
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+    border-bottom: solid 3px white;
+    align-items: center;
+    color: white;
+    background-color: #0005;
+    border-top: white;
+}
+
+header nav img {
+    width: 200px;
+}
+
+.nav-links {
+    display: flex;
+    gap: 32px;
+}
+
+.login,
+.menu {
+    display: flex;
+    gap: 60px;
+}
+
+header nav img {
+    width: 150px;
+}
+
+#mobile {
+    height: 50px;
+    width: 50px;
+}
+
+@media screen {
+    min-width: 320px;
+    max-width: 1080px;
+}
