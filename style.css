@@ -1,202 +1,278 @@
+@import url('https://fonts.googleapis.com/css2? family= Bricolage+Grotesque:opsz,wght@12..96,200;12..96,300;12..96,400 & family= Lector de noticias:ital ,opsz,wght@0,6..72,200;0,6..72,300;0,6..72,400;1,6..72,200;1,6..72,300 & display=swap');
+
 * {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
 }
-body {
-    display: grid;
-    font-size: 30px;
-    overflow: hidden;
-    background-color: #5a4985;
+#body {
+    /*display: grid;
+    grid-template-columns: 1fr 1fr 1fr;*/
     width: 1080px;
+    height: 1920px;
+
 }
-header, nav {
+.navbar_header {
     height: 83px;
     width: 100%;
-    padding: 0 60px;
+    padding: 0 5px 0 60px;
+    border-bottom: solid 1px white;
     position: fixed;
     z-index: 50;
-    top: 0;
+    top: 0;          
 }
-nav {
+.navbar_header .navbar_nav {
+    height: 100%;
     width: 100%;
-    position: fixed;
     display: flex;
     flex-direction: row;
     justify-content: space-between;
+    align-items: center;    
+} 
+.navbar_header .navbar_nav .navbar_container_links .logo_unique {
+    width: 168px;
+    height: 23px;
+    display: flex;
+    justify-items: right;
+    padding-right: 30px;
+} 
+#mobile {
     width: 100%;
-    border-bottom: solid 2px white;
-    align-items: center;
-    color: white;
-    background-color: #0005;
-    padding: 15px;
-}
-.navbar_container_links {
-    background-color: grey;
+    height: 100vh;
+    object-fit: cover;
+    object-position: top -300px right 0; 
+}    
+.navbar_header .navbar_nav .navbar_container_links {
     height: fit-content;
     display: flex;
-    gap: 64px 20px;
-    font-size: 12px;
     align-items: center;
+    gap: 0px 40px;
+    font-size: 20px;
+}
+.navbar_header .navbar_nav .navbar_container_links .login {
+    color: #7E7E7E;
+    display: flex;
+}
+.navbar_header .navbar_nav .navbar_container_links .login_bold {
+    color: #fff;
+    display: flex;
+}
+.navbar_header .navbar_nav .navbar_container_links .nav_barra_corta {
+    width: 1.28px;
+    height: 28px;
+    color: rgba(255, 255, 255, 0.50);
+}
+.navbar_header .navbar_nav .navbar_container_links .nav_barra_larga {
+    width: 1px;
+    height: 28px;
+    color: #FFFF;
+    display: flex;
+    align-items: end;
     justify-content: center;
-    margin-right: 30px;
-  }
-.login {
-    display: flex;
-    gap: 20px;
-    align-items: center;
-    font-size: 18px;
+    font-size:xx-large;    
 }
-.logo_unique {
-    padding: 20px 30px;
-    display: flex;
-    align-content:space-around;
-}
-.barp {
-    width: 3px;
-    background-color: #ffffff;
-    height: 16px;
-    display: block;
-}
-.barl {
-    width: 3px;
+.navbar_header .navbar_nav .navbar_container_links .logo_menu {
+    width: 45px;
     height: 30px;
-    background-color: #ffffff;
-    display: flex;
 }
-.active {
-    color: #7e7e7e;
-}
-.logo_menu {
-    height: 50px;
-    width: 50px;
-    display: flex;
-    align-items: center;
-    padding-top: 5px;
-}
-.imagen_fondo_principal {
+#main {
     width: 100%;
-    height: 800px;
+    overflow: hidden;
+}
+.seccion_portada_principal {
+    width: 1080px;
+    height: 100vh;
+    position: absolute;
     display: flex;
-    position: relative;
     align-items: center;
-    overflow-x: hidden;
-    justify-content:flex-start;
-    align-items: center;
-    background-color: grey;    
+     
 }
-.foto_principal {
-    z-index: -1;
-    opacity: 0.3;
-    background: linear-gradient(270deg, #000 0%, #7E7E7E 100%);
-    position: absolute;
-    height: 100%;
-}
-.imagen_fondo_principal .container_text{
-z-index: 2;
-width: 490px;    
-}
-main {
-    background-color: goldenrod ;
-    min-height: 80vh;
-    display: grid;
-    grid-template-columns: repeat(6, 1fr);
-}
-section .primera_seccion {
-    grid-column: span3;
-    width: 100%;
-    height: 60px;
-    position: absolute;
-    background-color: blueviolet;
+.seccion_portada_principal .container_destino_box {
+    width: 60px;
+    height: 529px;
+    margin-right: 122px;
+    border: #fff solid 1px;
+    border-radius: 100px;
+    position: fixed;
  }
-.seccion_vertical_redes {
-    background-color: rgb(56, 90, 74);
+.seccion_portada_principal .container_destino_box .label_destino {
+    width: 60px;
+    height: 529px;
+    display: flex;
+    justify-items: center;
+ }
+.seccion_portada_principal .container_destino_box .input_destino {
+    width: 60px;
+    height: 529px;
+    display: flex;
+    justify-items: center;
+ }
+.seccion_portada_principal .container_destino_box .lupa_placeholder {
+    position: absolute;
+}
+.seccion_portada_principal .seccion_vertical_redes {
     position: absolute;
     z-index: 999;
     left: 10px;
     height: auto;
     display: flex;
     flex-direction: column;
-    gap: 20px;
+    gap: 30px;
+    align-items: center;
     justify-content: space-between;
-    align-items:center;
-    padding-top: 90px;
+    padding-top: 220px;
 } 
-.seccion_vertical_redes .social {
+.seccion_portada_principal .seccion_vertical_redes .social {
     height: 30px;
     width: 15px;
     text-decoration: overline;
-}  
-.activef {
-    width: 25px;
-    height: 30px;
+} 
+.seccion_portada_principal .seccion_vertical_redes .follow_vertical {
     transform: rotate(90deg);
     -webkit-transform: rotate(90deg);
     -moz-transform: rotate(90deg);
     -ms-transform: rotate(90deg);
     -o-transform: rotate(90deg);
-    color: #7e7e7e;
-    font-size: 12px;      
-}
-.barf {
-    height: 1px;
-    width: 30px;
-    transform: rotate(90deg);
-    -webkit-transform: rotate(90deg);
-    -moz-transform: rotate(90deg);
-    -ms-transform: rotate(90deg);
-    -o-transform: rotate(90deg);
-    background-color: #000000;
-}
-.input_destino_lupa {
-    width: fit-content;
-    position: absolute;
-}
-.place_destino_box {
-    background-color: brown;
-    width: 400px;
-    height: 30px;
-    border: #fff solid 1px;
-    border-radius: 100px;
-    padding: 4px 4px;
-    position: relative;
-    margin: right;
- }
-.input::placeholder {
-    color: transparent;
-}
-.imagen_fondo_principal .container_text {
-    background-color: beige;
-    padding: 150px 25px;
-    position: absolute;
-    z-index: 2;
-    flex-direction: column;
+    color: #7E7E7E;
+    font-size: 20px;
     justify-content: center;
-    flex-shrink: 0;
-    display: flex;
-    text-justify: auto;
+    font-family: Bricolage Grotesque;     
 }
-.imagen_fondo .container_text h2 {
-    font-size: 40px;
-    font-weight: 45;
-    line-height: 300px;
-    font-family: 'Times New Roman', Times, serif;
-    color: #7a7d7d;
-    text-align: left;
+.seccion_portada_principal .seccion_vertical_redes .barra_follow {
+    height: 75px;
+    width: 2px;
+    transform: rotate(180deg);
+    -webkit-transform: rotate(180deg);
+    -moz-transform: rotate(180deg);
+    -ms-transform: rotate(180deg);
+    -o-transform: rotate(180deg);
+    background-color: #7E7E7E;
+    position:relative;
 }
-.imagen_fondo .container_text h1 {
-    font-size: 80px;
-    font-weight: 500;
-    line-height: 250px;
-    font-family:'Times New Roman', Times, serif;
-    color: #FFFF;
-}
-segunda_section {
+.seccion_portada_principal .foto_portada {
+    z-index: 0;
+    position: absolute;
+    height: auto;
     width: 100%;
-    background-color: blue;
-    grid-column: span9;
+    object-fit: cover;
+    object-position: top -300px right 0;
+      
 }
-aside {
+.seccion_portada_principal .transparencia {
+    z-index: 1;
+    mix-blend-mode: hard-light;
+    position: relative;
+    width: 100%;
+    height: auto;
+}
+.seccion_portada_principal .portada_container_text {
+    /*height: fit-content;*/
+    display: flex;
+    flex-direction: column;
+    position: absolute;
+    margin-left: 122px;
+    margin-top: 523px;
+}
+.seccion_portada_principal .portada_container_text .titulo {
+    color: #B4B7B7;
+    font-family:Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    font-size: 40px;
+}
+.seccion_portada_principal .portada_container_text .empresa {
+    color: #FFF;
+    font-family:Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    font-size: 80px; 
+    width: 746px;
+    top: 683px;
+    left: 106px;
+    height: 99px;
+}
+.seccion_portada_principal .view_propiedades_box {
+    /*width: 80px;
+    height: 207px;*/
+    top: 325px;
+    left: 122px;
+    border: #FFFFFF;
+}
+.seccion_portada_principal .view_propiedades_box .label_view_properties {
+    size: 30px;
+    line-height: 45px;
+    font-family: url('https://fonts.googleapis.com/css2? family= Bricolage+Grotesque:opsz,wght@12..96,200;12..96,300;12..96,400 & family= Lector de noticias:ital ,opsz,wght@0,6..72,200;0,6..72,300;0,6..72,400;1,6..72,200;1,6..72,300 & display=swap'); ;
+}
+.seccion_portada_principal .view_propiedades_box .input_view_properties {
+    border-radius: 100px;
+    border: 1px solid #FFFFFF;
+    padding-top: 0;
+    padding-bottom: 2px;
+    font-size: 16px;
+    color: #fff;
+    padding-left: 25px;
+    background-color: transparent !important;
+    height: 55px !important;
+}
+.seccion_portada_principal .view_propiedades_box .flecha_view {
+    width: 80px;
+    height: 407px;
+    top: 911px;
+    left: 122px;
+    border: #FFFFFF;
+}
+
+/*hasta aqui seccion portada principal*/
+
+
+/*desde aqui seccion propiedades venta renta*/
+
+.seccion_venta_renta {
+    margin: 5% 0;
+}
+.seccion_venta_renta .grid_container_sale {
+    grid: 100%;
+    grid-template-columns: 1fr 1fr;  
+}
+.seccion_venta_renta .grid_container_sale .text_gallery_sale {
+    display: flex;
+    justify-items: end;
+    right: 122px;
+    width: 100%;
+    height: 100px;
+    padding: 20px 20px;
+} 
+.seccion_venta_renta .grid_container_sale .gallery_sale {
+    color: chocolate;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    font-size: 40px;
+    font-weight: 400;
+    line-height: 45px;
+    letter-spacing: 1px;
+    text-align: right;
+}
+.seccion_venta_renta .grid_container_sale .carrucel_sale {
+    display: flex;
+    margin-left: -15vw;
+    display: flex;
+    gap: 20px;
+}
+.seccion_venta_renta .grid_container_sale .carrucelsalea {
+    background-image: url(./img/scottlorsch.jpg);
+    display: flex;
+    flex-direction: row;      
+}
+.seccion_venta_renta .grid_container_sale .carrucelsaleb {
+    background-image: url(./img/derekthomson.jpg);
+    display: flex;
+    flex-direction: row;
+    
+}
+.seccion_venta_renta .grid_container_sale .carrucelsalec {
+    background-image: url(./img/danielbarnes.jpg);
+    display: flex;
+    flex-direction: row;
+}
+
+
+/*Hasta aqui galeria for sale*/
+#aside {
     background-color: chocolate;
     grid-column: span3;
     color: azure;
@@ -223,13 +299,13 @@ div.desc {
     text-align: center;
 }
 
-
-piePagina{
+/* Aqui empieza el footer*/
+#footer{
     display: grid;
     grid-template-columns: 1fr;
     grid-template-rows: auto auto 1fr;
 }
-footerSeccion1{
+#footer_seccion_1{
     background: #26282B;
     display: grid;
     grid-template-columns: 1fr 1fr;
@@ -244,7 +320,7 @@ footerSeccion1{
     grid-template-rows: auto 1fr;
 }
 #titulofooter1{
-    font-size: 30px;
+    font-size: 40px;
     line-height: 32px;
     grid-column: 1/2;
     font-style: normal;
@@ -256,7 +332,7 @@ footerSeccion1{
 }
 
 #titulofooter2{
-    font-size: 40px;
+    font-size: 60px;
     line-height: 40px;
     grid-column: 1/2;
     font-style: normal;
@@ -293,14 +369,15 @@ footerSeccion1{
 }
 #nombreForm input{
     border-radius: 100px;
-    border: 1px solid #DF991B;
+    border: 1px solid grey;
     padding-top: 0;
     padding-bottom: 2px;
     font-size: 16px;
     color: #fff;
     padding-left: 25px;
-    background-color: transparent !important;
-    height: 55px !important;
+    background-color: transparent;
+    height: 60px;
+    width: 600px;
 }
 #emailform{
     padding-bottom: 15px;
@@ -323,14 +400,15 @@ footerSeccion1{
 }
 #emailform input{
     border-radius: 100px;
-    border: 1px solid #DF991B;
+    border: 1px solid #7E7E7E;
     padding-top: 0;
     padding-bottom: 2px;
     font-size: 16px;
     color: #fff;
     padding-left: 25px;
-    background-color: transparent !important;
-    height: 55px !important;
+    background-color: transparent;
+    height: 60px;
+    width: 600px;
 }
 #botonregistro{
     display: flex;

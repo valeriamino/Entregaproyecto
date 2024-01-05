@@ -1,8 +1,8 @@
 @media screen and (max-width: 600px) {
-    #logo {
+    .logo_unique {
       display: none;
     }
-    #mobile {
+    .logo_mobil {
       display: block;
     }
   
@@ -17,5 +17,13 @@
   
     main img {
       object-position: center;
+    }   
+
+    #mobile {
+    display: block;
     }
+
+    .foto_portada {
+    object-position: center;
+  }
 }
