@@ -1,29 +1,90 @@
-@media screen and (max-width: 600px) {
+@media screen and (max-width: 768px) {
+  .header_navbar .navbar_nav .navbar_container_links
+    .login {
+      display: none;
+    }
+    .login_bold {
+      display: none;
+    }
+    .nav_barra_corta {
+      display: none;
+    }
+    .nav_barra_larga {
+      display: none;
+    }
+    .logo_menu {
+      display: none;
+    }
+    .logo_menu{
+      display: block;
+    }
+
+}
+
+@media screen and (max-width: 768px) {
+  .header_navbar .navbar_nav {
     .logo_unique {
       display: none;
     }
     .logo_mobil {
       display: block;
     }
-  
-    .login {
+  }
+} 
+@media screen and (max-width: 568px) {
+  .seccion_portada_principal {
+    .foto_portada_principal {
       display: none;
+    } 
+    .foto_portada_movil {
+      display: flex;
+      
     }
-  
-    .menu a,
-    .menu div {
-      display: none;
-    }
-  
-    main img {
-      object-position: center;
-    }   
+  }
+} 
 
-    #mobile {
-    display: block;
-    }
-
-    .foto_portada {
-    object-position: center;
+@media screen and (max-width: 768px) {
+  .portada_container_text {
+    .luxury
+    .real_state {
+      display: flexbox;
+      justify-content: center;
+      align-items: center;
+    }  
+  }
+} 
+@media screen and (max-width: 320px) {
+  .portada_container_text {
+    .Luxury
+    .real_state {
+      display: flexbox;
+      justify-content: center;
+    }  
   }
 }
+/*@media screen and (max-width: 768px) {
+  .seccion_portada_principal {
+    .placeholder_destino {
+      display: flexbox;
+      justify-content: center;
+      position: fixed;
+    }   
+  }
+} 
+
+@media screen and (min-width: 320px) {
+  .seccion_portada_principal {
+    .placeholder_destino {
+      display: flex;
+      justify-content:center;
+      position: fixed;
+    }
+  }
+}*/
+
+
+
+
+
+
+  

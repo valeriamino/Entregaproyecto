@@ -1,228 +1,297 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>UniqLuxury</title>
-    <link rel="stylesheet" href="style.css" type="text/css">
-    <link rel="stylesheet" href="queries.css" type="text/css">
-
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>UniqLuxury</title>
+  <link rel="stylesheet" href="./style.css" type="text/css">
+  <link rel="stylesheet" href="./queries.css" type="text/css">
+  <link rel="stylesheet" href="https://uniqluxury.com.mx/real-estate-home/" type="URL">
 </head>
+
 <body>
-  <header class="navbar_header">
+  <header class="header_navbar">
     <nav class="navbar_nav">
-      <img id= "Logo_unique" src="./img/logo.png" alt="" srcset="">
-      <!--<img id="mobil" src="/img/logomobil.png" alt="" srcset="">-->
+      <a href="">
+        <img class="logo_unique" src="./img/logo.png" alt="" srcset="">
+        <img class="logo_mobil" src="./img/logouniqmobil.png" alt="" srcset="">
+      </a>
 
       <div class="navbar_container_links">
-        <a ref="" class="login">LOG IN</a>
-        <a ref="" class="nav_barra_corta">|</a>
-        <a ref="" class="login_bold">SIGN UP</a>
-        <a ref="" class="login">ESP</a>
-        <a ref="" class= "login_bold">ENG</a>
-        <a href>
-          <a ref="" class="nav_barra_larga">|</a>
-          <img src="./img/menu.jpg" alt="" class="logo_menu">
-        </a>  
+        <a href="/" class="login">LOG IN</a>
+        <a class="nav_barra_corta"></a>
+        <a href="/" class="login_bold">SIGN UP</a>
+        <a href="/" class="login">ESP</a>
+        <a href="/" class= "login_bold">ENG</a>
+        <a class="nav_barra_larga"></a>   
+          <img class="logo_menu" src="./img/menu.png" alt="" srcset="">  
       </div>    
     </nav>
   </header>
-     
-  <main>
-    <section class="seccion_portada_principal">
+    
+  <section class="seccion_portada_principal">
+    
+      <img src="./img/fotoportada.png" alt="aqui la foto de portada principal" class="foto_portada_principal">
+      <img src="./img/transparencia.png" alt="" class="transparencia_foto_principal">
+      <!--<img src="./img/fotoportadamovil.png" alt="foto portada version movil" class="foto_portada_movil">-->
+    
 
-      <div class="imagen_fondo">
-       <img src="./img/portada.png" alt="imagen principal" class="foto_portada">
-       <img src="./img/transparencia.png" alt="degradado_portada" class="transparencia">
+    <div class="seccion_vertical_redes">
+      <a class= "follow_vertical">FOLLOW</a>
+      <div class="barra_follow"></div>
+      <img src="./img/facebook.svg" alt="" class="social">
+      <img src="./img/linked.svg" alt="" class="social">
+      <img src="./img/twiter.svg" alt="" class="social">
+      <img src="./img/youtube.svg" alt="" class="social">
+    </div>
+
+    <div class="portada_container_text">
+      <h3 class="luxury">Luxury</h3>
+      <h1 class="real_state">Real State</h1>
+    </div>
+
+    <div class="placeholder_destino">
+      <input type="text" placeholder="Ex. Villa Budapest" class="input_destino">
+      <img src="./img/lupa.jpg" alt="" class="input_lupa">
+    </div>
+
+    <div class="placeholder_view">
+      <input type="text" placeholder="View all properties" class="input_view">
+      <img src="./img/flechaderecha.png" alt="" class="input_flecha">
+    </div> 
+
+  </section>
+
+  <!--hasta aqui la seccion portada principal-->
+
+
+  <!--Aqui inicia el primer carrusel propiedades venta-->
+  
+  <section class="seccion_carrusel_venta">
+    
+    <div class="imagenes_carrusel_venta">
+      
+      <div class="imagen1venta">
+        <label class="rotulo1imagenventa">Scott<label>
+        <label class="rotulo2imagenventa">Lorsch</label>
+      </div>  
+
+      <div class="imagen2venta">
+  
+        <label class="rotulo1imagenventa">England </label>
+        <label class="rotulo2imagenventa">Glasgow </label>
       </div>
 
-      <div class="container_destino_box">
-        <label for="destino" class="label_destino"></label>
-        <input type="text" placeholder="Ex. Villa Budapest" class="input_destino">
-        <img src="./img/lupa.jpg" alt="click en la lupa para llevar al destino sugerido">
-      </div>
+      <div class="imagen3venta">
        
-      <div class="seccion_vertical_redes">
-        <a class= "follow_vertical">FOLLOW</a>
-        <div class="barra_follow"></div>
-        <img src="./img/facebook.svg" alt="" class="social">
-        <img src="./img/linked.svg" alt="" class="social">
-        <img src="./img/twiter.svg" alt="" class="social">
-        <img src="./img/youtube.svg" alt="" class="social">
+        <label class="rotulo1imagenventa">France</label>
+        <label class="rotulo2imagenventa">Marseilles</label>  
       </div>
+    </div>
 
-      <div class="portada_container_text">
-        <h2 class="titulo">Luxury</h2>
-        <h1 class="empresa">Real State</h1>
-      </div>
+    
+    <div class="texto_carrusel_venta">
+      <span class="worldwide">Worldwide gallery</span>
+      <h2 class="forsale">Properties for sale</h2>
+      <p class="p">
+        In an ultimate jetsetter location or a forever home, our experts have the expertise it takes to knowledgeably advise you at every stage of the property cycle.
+      </p> 
+    
 
-      <div class="view_propiedades_box">
-       <label for="view" class="label_view_properties"></label> 
-       <input type="text" placeholder="View all properties" class="input_view_properties">
-       <img src="./img/flecha.jpg" alt="flecha dentro de placeholder para ver todas las propiedades" class="flecha_view">
+      <div class="botones_carrusel_venta">
+        <button class="boton_vector">
+          <img src="./img/vectorabierto.png">PREV
+        </button>
+        <button class="boton_view">View all properties</button>
+        <button class="boton_vector">
+         NEXT<img src="./img/vectorcerrado.png">
+        </button> 
       </div>
+    </div>     
+  </section>
+  
+  <!--hasta aqui el carrusel propiedades venta-->
+
+  <!--desde aqui el carrucel propiedades renta-->
+
+  <section class="seccion_carrusel_renta">
+    
+    <div class="texto_carrusel_renta">
+      <span class="worldwiderenta">Worldwide gallery</span>
+      <h2 class="forrent">Properties for rent</h2>
+      <p class="pr">
+        In an ultimate jetsetter location or a forever home, our experts have the expertise it takes to knowledgeably advise you at every stage of the property cycle.
+      </p>
+  
+      <div class="botones_carrusel_renta">
+        <button class="boton_vector">
+          <img src="./img/vectorabierto.png">PREV
+        </button>
+        <button class="boton_view">View all properties</button>
+        <button class="boton_vector">
+         NEXT<img src="./img/vectorcerrado.png">
+        </button>
+      </div>   
+    </div> 
       
-    </section>  
-    <!--Hasta aqui seccion portada principal-->
-
-    <!--aqui inicia seccion renta y venta-->
-      
-    <section class="seccion_venta_renta">
-
-      <div id="properties_for_sale" class="grid_container-sale">
+    <div class="imagenes_carrusel_renta">
+      <div class="imagen1renta">
+    
+        <span class="rotulo1imagenrenta">France</span>
+        <span class="rotulo2imagenrenta">Carcassonne</span>
+      </div>
+  
+      <div class="imagen2renta">
         
-        <div id="text_gallery_sale">
-          <span id="gallery_sale">Worldwide gallery</span>
-          <span id="properties_sale">Properties for sale<span>
-          <span id="text_exp">Tanto si se trata de un lugar de ensueño como de una casa para siempre, nuestros expertos tienen la experiencia necesaria para asesorarte en cada etapa del proceso inmobiliario</span>
-        </div>
- 
-        <div class="view_propiedades_box_gallery">
-          <div id="vector_abierto">
-            <input type="button" img src="./img/vectorabierto.png" class="vector_abierto">
-        </div>
-          <div>
-            <button>PREV</button>
-          </div>
-            
-          <label for="view" class="view_properties"></label> 
-          <input type="text" placeholder="View all properties" class="input_view_properties">
-          <div>
-            <button>NEXT</button>
-          </div>
-        
-          <button src="./img/flecha.jpg" alt="flecha dentro de placeholder para ver todas las propiedades" class="flecha_view">
-          <button src="./img/vectorcerrado.png" class="vector_cerrado">
-        </div>
-
-        <div id="carrucel_sale">
-          <a ref="" id="carrucelsalea" alt="scott lorsch"></a>
-          <a ref="" id="carrucelsaleb" alt="england glasgow"></a>
-          <a ref="" id="carrucelsalec" alt="france marseilles"></a>
-        </div>
-            
+        <span class="rotulo1imagenrenta"> German</span>
+        <span class="rotulo2imagenrenta">Munich</span>
       </div>
-    </section>  
-      
+  
+      <div class="imagen3renta">
+       
+        <span class="rotulo1imagenrenta">France</span>
+        <span class="rotulo2imagenrenta">Clo</span>
+      </div>
+    </div>
 
-  <aside>Luxurypropieties</aside>
-      <div class="gallery">
+  </section>
+
+<!--hasta aqui el carrusel propiedades renta-->
+
+<!--aqui empieza galeria propiedades de lujo developments-->
+
+  <section class="seccion_gallery_developments">
+  
+    <div class="titulo_gallery">
+      <h3 class="titulogaleria">Luxury properties</h3>
+      <h2 class="desarrollos">Developments</h2>
+    </div>
+
+    <div class="galeria_container_fila1">
+      <div class="thesurfrow">
         <a target="_blank" href="./img/thesurfrow.jpg">
-            <img src="./img/thesurfrow.jpg" alt="The Surf Row">
-        </a>
-      <div class="desc">Surfside</div>
-      </div>
-      
-        <div class="gallery">
-          <a target="_blank" href="img/indigo.jpg">
-            <img src="./img/indigo.jpg" alt="Indigo">
-          </a>
-          <div class="desc">Vero Beach</div>
-        </div>
-      
-        <div class="gallery">
-          <a target="_blank" href="./img/rosewood.jpg">
-            <img src="./img/rosewood.jpg" alt="Rosewood - Baha Mar">
-          </a>
-          <div class="desc">Nassau, The Bahamas</div>
-        </div>
-        
-        <div class="gallery">
-          <a target="_blank" href="./img/stregis.jpg">
-            <img src="./img/stregis.jpg" alt="St. Regis - The Astor Tower">
-          </a>
-          <div class="desc">The Astos Tower - Brickell, Miami</div>
-        </div>
-        <div class="gallery">
-          <a target="_blank" href="./img/giraldaplace.jpg">
-            <img src="./img/giraldaplace.jpg" alt="Girala Place">
-          </a>
-          <div class="desc">Coral Gables</div>
-        </div>
-        
-        <div class="gallery">
-          <a target="_blank" href="./img/thewilliamtower.jpg">
-            <img src="./img/thewilliamtower.jpg" alt="The William Tower">
-          </a>
-          <div class="desc">The William Tower - Brickell Miami</div>
-        </div>
-        
-        <div class="gallery">
-          <a target="_blank" href="./img/solterre.jpg">
-            <img src="./img/solterre.jpg" alt="Solterre at Cock Vesbell Bay">
-          </a>
-          <div class="desc">St. Kitts and Wevis</div>
-        </div>
-        
-        <div class="gallery">
-          <a target="_blank" href="./img/urbin.jpg">
-            <img src="./img/urbin.jpg" alt="Urbin">
-          </a>
-          <div class="desc">Coconut Grove</div>
-        </div>
-    </main>
+          <img class="thesurfrow" src="./img/thesurfrow.jpg" alt="imagen primera fila galeria">
+          <p class="desc">Surf</p>
+          <p class="desc1">The Surf Row</p>
+        </a>  
+          
+      </div>   
+        <img class="indigo" src="./img/indigo.jpg" alt="imagen primera fila galeria">
+        <img class="rosewood" src="./img/rosewood.jpg" alt="Rosewood Baha Mar Nassau The Bahamas">
+        <img class="stregis" src="./img/stregis.jpg" alt="St. Regis, The Astor Tower-Brickllel Miami">
+    </div>
 
- <!--Desde aqui empieza el footer-->   
-    <div id="footer">
-      <div id="footer_seccion_1">
-        <div id="titulofooter1">Join the list</div>
-        <div id="titulofooter2">Unlock<br>the exclusive world</div>
-          <div id="miniForm">
-            <div id="nombreForm">
-                <label>NAME: </label>
-                <input type="text" id="nombreusu" name="nombreusu" placeholder="Ex. James Jones">
-            </div>
-                
-            <div id="emailform">
-                <label>EMAIL: </label>
-                <input type="text" id="email" name="email" placeholder="Ex. name@mail.com">
-            </div>
-            
-            <div id="botonregistro">
-                <input type="button" value="Submit" >
-            </div>
-        </div>
+    <div class="galeria_container_fila2">
+        <img class="giraldaplace" src="./img/giraldaplace.jpg" alt="Giralda Place-Coral Gables">
+        <img class="thewilliamtower" src="./img/thewilliamtower.jpg" alt="St. Regis The William Tower - Brickllel, Miami">
+        <img class="solterre" src="./img/solterre.jpg" alt="Solterre at Cockleshell Bay">
+        <img class="urbin" src="./img/urbin.jpg" alt="Urbin - Coconut Grove">
+    </div> 
+     
+  </section>
+
+  <!-- hasta aqui seccion galeria -->
+
+  <!-- aqui inicia seccion servicios art -->
+  <section class="seccion_service_art">
+
+    <div class="imagen_service_art">
+      <img src="./img/cuadronegroart.jpg" alt="cuadro negro atras de imagenart" class="cuadro_negro"> 
+      <img src="./img/imagenart.jpg" alt="" class="image_art">     
     </div>
-        
-    <div id="footerSeccion2">
-        <div id="infofooter">
-          <div class="infofooter1">
-            <a href="https://uniqluxury.com.mx/"><img src="https://uniqluxury.com.mx/wp-content/uploads/2022/08/LogoUnqRE.svg"></a>
-            <span><a href="https://uniqluxury.com.mx/become-an-artist/?lang=en">Become a New Uniq Artist</a></span>
-            <span><a href="https://uniqluxury.com.mx/become-a-partner/?lang=en">Become a Commercial Partner</a></span>
-          </div>
-                    
-          <div class="infofooter4">
-            <span><a href="https://uniqluxury.com.mx/real-estate-search/">Suites</a></span>
-            <span><a href="https://uniqluxury.com.mx/real-estate-search/">Villas</a></span>
-            <span><a href="https://uniqluxury.com.mx/real-estate-search/">Houses</a></span>
-          </div>
-          
-          <div class="infofooter2">
-            <span><a href="https://uniqluxury.com.mx/real-estate-search/">Apartaments</a></span>
-            <span><a href="https://wa.me/message/6F57KUT3W27SO1">Contact us</a></span>
-            <span style="height: 38px;"></span>
-          </div>
-          
-          <div class="infofooter3">
-            <span><a href="#" id="call-center-re">Call Center</a></span>
-            <span><a href="https://wa.me/message/6F57KUT3W27SO1" id="numn-uniq-re">+52 55 6840 4000</a></span>
-            <span><a href="mailto:concierge@uniqluxury.com" id="email-uniq-re">concierge@uniqluxury.com</a></span>
-                        
-          <div id="redSocial">
-              <div id="media1"></div>
-              <div id="media2"></div>
-              <div id="media3"></div>
-              <div id="media4"></div>
-          </div>
-        </div>
-                
-       </div>
-              <div id="copyright">
-                Copyright © 2022
-              </div>
-    </div>
-    </footer>
+
+    <div class="texto_service_art">
+      <img src="./img/bordelinealogomobil.jpg" alt="" class="bordelogomobil">
+      <img src="./img/linealogomobil.jpg" class="linealogomobil">
+    
+      <h3 class="services">Services</h3>
+      <h2 class="art">Art Curation & Interior Design</h2>
+      <p class="parrafoart">
+        In an ultimate jetsetter location or a forever home, our experts have the expertise it takes to knowledgeably advise you at every stage of the property cycle.
+      </p>   
+    
+      <div class="botones_art">
+        <button class="boton_vector">
+         <img src="./img/vectorabierto.png">PREV
+        </button>
+        <button class="boton_contact">Contact us</button>
+        <button class="boton_vector">
+          NEXT<img src="./img/vectorcerrado.png">
+        </button> 
+      </div>   
+
+  </section>
+
+<!--hasta aqui seccion services art-->
+
+<!--aqui empieza el footer-->
  
+  <footer class="footer">
+    <div class="footer_parte_1">
+    
+      <div class="joinfooter">Join the list</div>
+      <div class="unlockfooter">Unlock<br>the exclusive world</div>
+    
+      <div class="miniform">
+      
+        <div class="nombreform">
+          <span class="namefooter">NAME: </span>
+          <input type="text" placeholder="Ex. Lala" class="input_footer_form"></input>
+        </div>
+          
+        <div class="emailform">
+          <span class="correoform">EMAIL: </span>
+         <input type="text" placeholder="Ex. name@mail.com" class="input_mail_form">
+        </div>
+          
+        <div class="botonregistro">
+          <input type="button" value="SIGN UP" class="input_registro_footer"></input>
+        </div>
+       </div>
+    </div>
+
+  <!--hasta aqui primer cuadro footer-->
+
+  <!--desde aqui segundo cuadro footer-->
+  
+    <div class="footer_parte_2">
+    
+      <div class="footer_become">
+        <a href=""><img src="img/logo.png" class="logounique_footer"></a>
+        <span class="become_footer2"><a class="become_footer2" href="">Become a New Uniq Artist</a></span>
+        <span class="become_footer2"><a class="become_footer2" href="">Become a Commercial Partner</a></span>
+      </div>
+              
+      <div class="footer_products">
+        <span class="products_footer2"><a class="products_footer2" href="">Suites</a></span>
+        <span class="products_footer2"><a class="products_footer2" href="">Villas</a></span>
+        <span class="products_footer2"><a class="products_footer2" href="">Houses</a></span>
+      </div>
+              
+      <div class="footer_apartments">
+        <span class="footer_apart"><a class="footer_apart" href="">Houses</a></span>
+        <span class="footer_apart2">espacio vacio</span>
+        <span class="footer_apart"><a class="footer_apart" href="">Apartaments</a></span>
+        <span class="footer_apart"><a class="footer_apart" href="">Contact us</a></span>
+      </div>
+              
+      <div class="footer_contactos">
+        <span class="footer_contact"><a class="footer_contact" href="">Call Center</a></span>
+        <span class="footer_contact2"><a class="footer_contact2" href="">+52 55 6840 4000</a></span>
+        <span class="footer_contact"><a class="footer_contact" href="">concierge@uniqluxury.com</a></span>
+      </div>
+    </div>  
+    <div class="copyright">
+      Copyright © 2022
+    </div>
+
+       
+      
+    
+    
+  </footer>
+  
 </body>
 </html>
+
+  
